@@ -1,0 +1,56 @@
+# Optional: only used if this site is deployed to Netlify.
+# Enables clean URLs (e.g., /contact instead of /contact.html)
+# while internal links in the HTML still use .html so the site
+# also works correctly when opened locally or on hosts without rewrites.
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/doctors"
+  to = "/doctors.html"
+  status = 200
+
+[[redirects]]
+  from = "/new-patients"
+  to = "/new-patients.html"
+  status = 200
+
+[[redirects]]
+  from = "/patient-resources"
+  to = "/patient-resources.html"
+  status = 200
+
+[[redirects]]
+  from = "/faqs"
+  to = "/faqs.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/accessibility"
+  to = "/accessibility.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

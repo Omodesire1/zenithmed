@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%275%27 fill=%27%230a2f4e%27/%3E%3Cpath d=%27M12 12v-5M9.5 12h5%27 stroke=%27%2312a6a0%27 stroke-width=%272.4%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+<title>Patient Resources | Zenith Medical Centre Ottawa</title>
+<meta name="description" content="Access appointment booking, prescription renewals, forms, referrals, test results and more at Zenith Medical Centre in Ottawa.">
+<link rel="canonical" href="https://www.zenithmedicalcentre.example/patient-resources.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5Z" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Zenith Medical Centre
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html">Our Doctors</a></li>
+        <li><a href="new-patients.html">New Patients</a></li>
+        <li><a href="patient-resources.html" aria-current="page">Patient Resources</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn btn-primary btn-block" href="contact.html#appointments" style="margin-top:0.75rem;">Book Appointment</a></li>
+      </ul>
+      <div class="header-cta">
+        <a class="btn btn-primary" href="contact.html#appointments">Book Appointment</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div id="announcement-banner" class="announcement-banner" hidden>
+  <div class="container">
+    <span class="badge">Announcement</span>
+    <p data-announcement-text></p>
+    <button class="dismiss" type="button" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</div>
+
+<main id="main-content">
+  <section class="page-header">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Patient Resources</p>
+      <h1>Patient Resources</h1>
+      <p>Quick access to the tools and information our patients need most.</p>
+    </div>
+  </section>
+
+  <section id="book-appointment">
+    <div class="container two-col-text">
+      <div>
+        <h2>Book Appointment</h2>
+        <p>To book an appointment, call our clinic during opening hours. Existing patients may also have access to online booking through our patient portal (details provided at registration).</p>
+        <a class="btn btn-primary" href="contact.html#appointments">Book an Appointment</a>
+      </div>
+      <div class="card">
+        <h3>Opening Hours</h3>
+        <table class="table-hours" data-render="hours"></table>
+      </div>
+    </div>
+  </section>
+
+  <section id="prescription-renewal" class="section-bg-light">
+    <div class="container two-col-text">
+      <div>
+        <h2>Prescription Renewal</h2>
+        <p>For prescription renewals, contact your pharmacy first &mdash; many pharmacies can fax a renewal request directly to our clinic. Allow up to [PLACEHOLDER: number] business days for processing.</p>
+      </div>
+      <div>
+        <p><strong>Clinic fax:</strong> <span id="rx-fax">[PLACEHOLDER FAX NUMBER]</span></p>
+        <p><strong>Clinic phone:</strong> <a data-render="contact-phone-href" href="tel:">[PLACEHOLDER PHONE NUMBER]</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="forms">
+    <div class="container two-col-text">
+      <div>
+        <h2>Forms &amp; Documents</h2>
+        <p>Common clinic forms, including new patient registration and consent forms, are available below or at the front desk.</p>
+      </div>
+      <ul class="value-list">
+        <li>New Patient Registration Form &mdash; [PLACEHOLDER LINK]</li>
+        <li>Medical Records Release Form &mdash; [PLACEHOLDER LINK]</li>
+        <li>Consent to Treatment Form &mdash; [PLACEHOLDER LINK]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="referrals" class="section-bg-light">
+    <div class="container two-col-text">
+      <div>
+        <h2>Referrals</h2>
+        <p>If your physician has referred you to a specialist, the referral will be sent directly to the specialist's office. Wait times vary by specialty and are set by the receiving office, not by our clinic.</p>
+      </div>
+      <div>
+        <p>Questions about the status of a referral? Contact our front desk at <a data-render="contact-phone-href" href="tel:">[PLACEHOLDER PHONE NUMBER]</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="test-results">
+    <div class="container two-col-text">
+      <div>
+        <h2>Test Results</h2>
+        <p>Your physician or a member of our clinical team will contact you regarding test results that require follow-up. If you have not heard back within [PLACEHOLDER: timeframe], please call the clinic.</p>
+      </div>
+      <div>
+        <p class="placeholder-note">Test results are never sent by email or posted online for privacy and security reasons.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="medical-records" class="section-bg-light">
+    <div class="container two-col-text">
+      <div>
+        <h2>Medical Records</h2>
+        <p>To request a copy of your medical records or have them transferred to another provider, complete a Medical Records Release Form at the front desk. A processing fee may apply, in accordance with Ontario regulations.</p>
+      </div>
+      <div>
+        <p>See our <a href="privacy.html">Privacy Policy</a> for more on how your health information is managed under Ontario's PHIPA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="uninsured-services">
+    <div class="container two-col-text">
+      <div>
+        <h2>Uninsured Services</h2>
+        <p>Some services are not covered by OHIP and may involve a fee, such as certain forms, travel medicine consultations, and some medical certificates. A full fee schedule is available at the front desk.</p>
+      </div>
+      <div>
+        <p>[PLACEHOLDER: link to or list of uninsured services fee schedule]</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="after-hours" class="section-bg-light">
+    <div class="container two-col-text">
+      <div>
+        <h2>After-Hours Care</h2>
+        <p>For non-emergency care needs outside of our clinic hours, consider visiting a local walk-in clinic or contacting Health811 (dial 8-1-1) for 24/7 health advice from a registered nurse in Ontario.</p>
+      </div>
+      <div class="card info-card emergency">
+        <h3>Emergency</h3>
+        <p>For medical emergencies, always call 911 or go to your nearest emergency department.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-brand">Zenith Medical Centre</span>
+        <p style="color:#cfe0ea;">A family medical clinic in Ottawa, Ontario providing comprehensive primary care for patients of all ages.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Our Doctors</a></li>
+          <li><a href="new-patients.html">New Patients</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Patient Resources</h3>
+        <ul>
+          <li><a href="patient-resources.html#book-appointment">Book Appointment</a></li>
+          <li><a href="patient-resources.html#prescription-renewal">Prescription Renewal</a></li>
+          <li><a href="patient-resources.html#forms">Forms &amp; Documents</a></li>
+          <li><a href="patient-resources.html#referrals">Referrals</a></li>
+          <li><a href="patient-resources.html#test-results">Test Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li id="contact-address-1">[PLACEHOLDER STREET ADDRESS]<br><span id="contact-address-2">Ottawa, ON [PLACEHOLDER POSTAL CODE]</span></li>
+          <li>Phone: <a data-render="contact-phone-href" href="tel:">[PLACEHOLDER PHONE NUMBER]</a></li>
+          <li>Email: <a data-render="contact-email-href" href="mailto:">[PLACEHOLDER EMAIL ADDRESS]</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Zenith Medical Centre. All rights reserved.</p>
+    <ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof CLINIC_CONTENT !== "undefined") {
+      var fax = document.getElementById("rx-fax");
+      if (fax) fax.textContent = CLINIC_CONTENT.contact.fax;
+    }
+  });
+</script>
+</body>
+</html>

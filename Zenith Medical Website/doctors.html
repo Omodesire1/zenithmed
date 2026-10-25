@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%275%27 fill=%27%230a2f4e%27/%3E%3Cpath d=%27M12 12v-5M9.5 12h5%27 stroke=%27%2312a6a0%27 stroke-width=%272.4%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+<title>Our Doctors | Zenith Medical Centre Ottawa</title>
+<meta name="description" content="Meet the family physicians at Zenith Medical Centre in Ottawa, Ontario. View credentials, clinical interests and languages spoken.">
+<link rel="canonical" href="https://www.zenithmedicalcentre.example/doctors.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Our Doctors | Zenith Medical Centre Ottawa">
+<meta property="og:description" content="Meet the family physicians at Zenith Medical Centre in Ottawa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5Z" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Zenith Medical Centre
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html" aria-current="page">Our Doctors</a></li>
+        <li><a href="new-patients.html">New Patients</a></li>
+        <li><a href="patient-resources.html">Patient Resources</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn btn-primary btn-block" href="contact.html#appointments" style="margin-top:0.75rem;">Book Appointment</a></li>
+      </ul>
+      <div class="header-cta">
+        <a class="btn btn-primary" href="contact.html#appointments">Book Appointment</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div id="announcement-banner" class="announcement-banner" hidden>
+  <div class="container">
+    <span class="badge">Announcement</span>
+    <p data-announcement-text></p>
+    <button class="dismiss" type="button" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</div>
+
+<main id="main-content">
+  <section class="page-header">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Our Doctors</p>
+      <h1>Our Medical Team</h1>
+      <p>Meet the family physicians providing care at Zenith Medical Centre. Each doctor profile includes credentials, clinical interests and languages spoken.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid grid-3" data-render="doctors-full" data-base-path=""></div>
+    </div>
+  </section>
+
+  <section class="section-bg-light">
+    <div class="container" style="text-align:center;">
+      <h2>Not sure who to see?</h2>
+      <p>New patients are matched with a family physician as part of the registration process.</p>
+      <a class="btn btn-primary" href="new-patients.html">Register as a New Patient</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-brand">Zenith Medical Centre</span>
+        <p style="color:#cfe0ea;">A family medical clinic in Ottawa, Ontario providing comprehensive primary care for patients of all ages.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Our Doctors</a></li>
+          <li><a href="new-patients.html">New Patients</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Patient Resources</h3>
+        <ul>
+          <li><a href="patient-resources.html#book-appointment">Book Appointment</a></li>
+          <li><a href="patient-resources.html#prescription-renewal">Prescription Renewal</a></li>
+          <li><a href="patient-resources.html#forms">Forms &amp; Documents</a></li>
+          <li><a href="patient-resources.html#referrals">Referrals</a></li>
+          <li><a href="patient-resources.html#test-results">Test Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li id="contact-address-1">[PLACEHOLDER STREET ADDRESS]<br><span id="contact-address-2">Ottawa, ON [PLACEHOLDER POSTAL CODE]</span></li>
+          <li>Phone: <a data-render="contact-phone-href" href="tel:">[PLACEHOLDER PHONE NUMBER]</a></li>
+          <li>Email: <a data-render="contact-email-href" href="mailto:">[PLACEHOLDER EMAIL ADDRESS]</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Zenith Medical Centre. All rights reserved.</p>
+    <ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
